@@ -1,5 +1,5 @@
 FROM diepho/frigate-base
-LABEL maintainer "blakeb@blakeshome.com"
+LABEL maintainer "diepho@gmail.com"
 
 ENV DEBIAN_FRONTEND=noninteractive
 # Install packages for apt repo
