@@ -1,8 +1,8 @@
 <p align="center">
-  <img align="center" alt="logo" src="docs/static/img/frigate.png">
+  <img align="center" alt="logo" src="docs/static/img/smarteyes.png">
 </p>
 
-# Frigate - NVR With Realtime Object Detection for IP Cameras
+# SmartEyes - NVR With Realtime Object Detection for Edge-devices and IP Cameras
 
 A complete and local NVR designed for [Home Assistant](https://www.home-assistant.io) with AI object detection. Uses OpenCV and Tensorflow to perform realtime object detection locally for IP cameras.
 
@@ -17,13 +17,6 @@ Use of a [Google Coral Accelerator](https://coral.ai/products/) is optional, but
 - Records video clips of detected objects
 - 24/7 recording
 - Re-streaming via RTMP to reduce the number of connections to your camera
-
-## Documentation
-
-View the documentation at https://blakeblackshear.github.io/frigate
-
-## Donations
-If you would like to make a donation to support development, please use [Github Sponsors](https://github.com/sponsors/blakeblackshear).
 
 ## Screenshots
 Integration into Home Assistant
