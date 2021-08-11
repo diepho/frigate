@@ -3,7 +3,7 @@ ARG WHEELS_VERSION
 ARG FFMPEG_VERSION
 FROM diepho/frigate-wheels:${WHEELS_VERSION}-${ARCH} as wheels
 FROM diepho/frigate-ffmpeg:${FFMPEG_VERSION}-${ARCH} as ffmpeg
-FROM frigate-web as web
+FROM diepho/frigate-web as web
 
 FROM ubuntu:20.04
 LABEL maintainer "diepho@gmail.com"
