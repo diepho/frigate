@@ -1,4 +1,4 @@
-FROM frigate-base
+FROM diepho/frigate-base
 LABEL maintainer "blakeb@blakeshome.com"
 
 # Install packages for apt repo

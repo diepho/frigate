@@ -1,5 +1,5 @@
-FROM frigate-base
-LABEL maintainer "blakeb@blakeshome.com"
+FROM diepho/frigate-base
+LABEL maintainer "diepho@gmail.com"
 
 # By default, use the i965 driver
 ENV LIBVA_DRIVER_NAME=i965
