@@ -56,29 +56,29 @@ export default function AppBar() {
       <BaseAppBar title={LinkedLogo} overflowRef={moreRef} onOverflowClick={handleShowMenu} />
       {showMoreMenu ? (
         <Menu onDismiss={handleDismissMoreMenu} relativeTo={moreRef}>
-          <MenuItem icon={AutoAwesomeIcon} label="Auto dark mode" value="media" onSelect={handleSelectDarkMode} />
-          <MenuSeparator />
-          <MenuItem icon={LightModeIcon} label="Light" value="light" onSelect={handleSelectDarkMode} />
-          <MenuItem icon={DarkModeIcon} label="Dark" value="dark" onSelect={handleSelectDarkMode} />
-          <MenuSeparator />
-          <MenuItem icon={FrigateRestartIcon} label="Restart Frigate" onSelect={handleRestart} />
-        </Menu>
+        <MenuItem icon={AutoAwesomeIcon} label="Tự Động Màu Tối" value="media" onSelect={handleSelectDarkMode} />
+        <MenuSeparator />
+        <MenuItem icon={LightModeIcon} label="Màu Sáng" value="light" onSelect={handleSelectDarkMode} />
+        <MenuItem icon={DarkModeIcon} label="Màu Tối" value="dark" onSelect={handleSelectDarkMode} />
+        <MenuSeparator />
+        <MenuItem icon={FrigateRestartIcon} label="Khởi Động Lại" onSelect={handleRestart} />
+      </Menu>
       ) : null}
       {showDialog ? (
         <Prompt
           onDismiss={handleDismissRestartDialog}
-          title="Restart Frigate"
-          text="Are you sure?"
+          title="Khởi Động Lại"
+          text="Bạn có muốn không?"
           actions={[
-            { text: 'Yes', color: 'red', onClick: handleClickRestartDialog },
-            { text: 'Cancel', onClick: handleDismissRestartDialog },
+            { text: 'Đồng ý', color: 'red', onClick: handleClickRestartDialog },
+            { text: 'Hủy', onClick: handleDismissRestartDialog },
           ]}
         />
       ) : null}
       {showDialogWait ? (
         <Prompt
-          title="Restart in progress"
-          text="This can take up to one minute, please wait before reloading the page."
+        title="đang khởi động lại"
+        text="Vui lòng chờ vài giây để hoàn tất khởi động lại."
         />
       ) : null}
     </Fragment>

@@ -57,8 +57,8 @@ export default function Sidebar() {
           <Separator />
         </Fragment>
       ) : null}
-      <Destination className="self-end" href="https://docs.frigate.video" text="Documentation" />
-      <Destination className="self-end" href="https://github.com/blakeblackshear/frigate" text="GitHub" />
+      <Destination className="self-end" href="https://docs.edunetjsc.com/smarteyes" text="Documentation" />
+      <Destination className="self-end" href="https://github.com/edunetai" text="GitHub" />
     </NavigationDrawer>
   );
 }

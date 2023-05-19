@@ -10,10 +10,10 @@ version:
 	echo 'VERSION = "$(VERSION)-$(COMMIT_HASH)"' > frigate/version.py
 
 local: version
-	docker buildx build --target=frigate --tag frigate:latest --load .
+	docker buildx build --target=frigate --tag diepho/smarteyes:latest --load .
 
 local-trt: version
-	docker buildx build --target=frigate-tensorrt --tag frigate:latest-tensorrt --load .
+	docker buildx build --target=frigate-tensorrt --tag diepho/smarteyes:latest-tensorrt --load .
 
 amd64:
 	docker buildx build --platform linux/amd64 --target=frigate --tag $(IMAGE_REPO):$(VERSION)-$(COMMIT_HASH) .

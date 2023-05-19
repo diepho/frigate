@@ -528,6 +528,7 @@ export default function Events({ path, ...props }) {
                       <div class="hidden sm:flex flex-col justify-end mr-2">
                         {(event.end_time && event.has_snapshot) && (
                           <Fragment>
+                            {/* Diep: remove references to frigate+
                             {event.plus_id ? (
                               <div className="uppercase text-xs">Sent to Frigate+</div>
                             ) : (
@@ -538,7 +539,7 @@ export default function Events({ path, ...props }) {
                               >
                                 {uploading.includes(event.id) ? 'Uploading...' : 'Send to Frigate+'}
                               </Button>
-                            )}
+                            )} */}
                           </Fragment>
                         )}
                       </div>
